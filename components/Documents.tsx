@@ -4,7 +4,6 @@ import { HiOutlineExclamationCircle } from "react-icons/hi";
 export default function Documents({ baseUrl }: { baseUrl: string }) {
   const [documents, setDocuments] = useState<string[] | null>(null);
   const [error, setError] = useState<string | undefined>(undefined);
-  const [selectedDocument, setSelectedDocument] = useState<string | null>(null);
 
   const fetchDocuments = async () => {
     try {
@@ -23,9 +22,6 @@ export default function Documents({ baseUrl }: { baseUrl: string }) {
 
       const documents = await response.json();
       setDocuments(documents);
-      if (documents && documents.length > 0 && !selectedDocument) {
-        setSelectedDocument(documents[0]);
-      }
     } catch (error) {
       console.error(error);
       setError("Error al obtener la lista de documentos");
@@ -35,10 +31,6 @@ export default function Documents({ baseUrl }: { baseUrl: string }) {
   if (!documents) {
     fetchDocuments();
   }
-
-  const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedDocument(event.target.value);
-  };
 
   return (
     <div>
@@ -52,20 +44,14 @@ export default function Documents({ baseUrl }: { baseUrl: string }) {
             </div>
           </div>
           <div>
-            <select value={selectedDocument || ""} onChange={handleSelectChange}>
+            <select>
+              <option value="">Fuentes indexadas</option>
               {documents.map((document) => (
                 <option key={document} value={document}>
                   📓 {document}
                 </option>
               ))}
             </select>
-          </div>
-          <div>
-            {selectedDocument && (
-              <div>
-                <p>Aquí se muestra el contenido del documento {selectedDocument}</p>
-              </div>
-            )}
           </div>
         </div>
       )}
