@@ -48,7 +48,7 @@ export default function Documents({ baseUrl }: { baseUrl: string }) {
           <div className="flex flex-row content-center pb-4">
             <HiOutlineExclamationCircle className="mt-0.5 mr-2 h-5 w-5" />
             <div>
-              Las respuestas son generadas por OpenAI GPT utilizando fuentes de
+              Las respuestas son generadas por OpenAI GPT consultado las NIIFs y las NICs oficiales. 
               documentos indexados.
             </div>
           </div>
