@@ -10,7 +10,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <Layout
       title="Navi"
-      path="samasatsa"
+      path="Navi Sales"
       description="Navi AI tu asistente Financiero y Contable"
       
     >
