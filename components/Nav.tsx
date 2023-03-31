@@ -2,7 +2,7 @@ import Link from '@vercel/examples-ui/link'
 import Button from '@vercel/examples-ui/button'
 import DeployButton, { DeployButtonProps } from '@vercel/examples-ui/deploy-button'
 
-const REPO_URL = 'https://github.com/steamship-core/vercel-examples/tree/main'
+const REPO_URL = 'https://www.facebook.com/samasatsa'
 
 export interface NavProps {
   path: string
@@ -60,7 +60,7 @@ export default function Nav({ path, deployButton }: NavProps) {
               <Button
                 variant="ghost"
                 Component="a"
-                href="https://github.com/steamship-core/vercel-examples"
+                href="https://api.whatsapp.com/send/?phone=593998899225&text=Hola+deseo+informaci%C3%B3n+de+sus+planes+de+Servicios&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noreferrer"
               >

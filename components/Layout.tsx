@@ -19,7 +19,7 @@ const Layout: FC<LayoutProps> = ({
   return (
     <div className="mx-auto h-screen flex flex-col">
       <Head>
-        {title && <title>{`${title} - Samasat + Vercel Examples`}</title>}
+        {title && <title>{`${title} - Navi Sales + By Samasat AI`}</title>}
         {description && <meta name="description" content={description} />}
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -45,7 +45,7 @@ const Layout: FC<LayoutProps> = ({
           <span className='text-blue-800'>Samasat AI</span>
         </a>. Construyendo
         <a
-          href="https://github.com/steamship-core/vercel-examples/tree/main/ask-my-book-chatbot"
+          href="https://github.com/joztos"
           target="_blank"
           rel="noreferrer"
           className="text-black text-blue-600 ml-1 mr-1"

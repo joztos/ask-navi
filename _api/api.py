@@ -96,7 +96,7 @@ class AskMyBook(PackageService):
     def answer(
             self, question: str, chat_session_id: Optional[str] = None
     ) -> Dict[str, Any]:
-        """Answer a given question using a collection of source documents."""
+        """Como consultor de normas internacionales financieras y contables (NIIF y NIC), por favor, responda a la siguiente pregunta utilizando una colección de documentos fuente. Recuerde que debe utilizar únicamente el idioma español para responder"""
         chat_session_id = chat_session_id or self.config.default_chat_session_id
         chat_history = ChatHistory(self.client, chat_session_id)
 
@@ -106,7 +106,7 @@ class AskMyBook(PackageService):
         sources = result["source_documents"]
         if len(sources) == 0:
             return {
-                "answer": "No sources found to answer your question. Please try another question.",
+                "answer": "No se encontraron fuentes para responder a su pregunta. Por favor, intente con otra pregunta.",
                 "sources": sources,
                 "is_plausible": True,
             }
