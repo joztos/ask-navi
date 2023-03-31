@@ -2,7 +2,7 @@ import Link from '@vercel/examples-ui/link'
 import Button from '@vercel/examples-ui/button'
 import DeployButton, { DeployButtonProps } from '@vercel/examples-ui/deploy-button'
 
-const REPO_URL = 'https://www.facebook.com/samasatsa'
+const REPO_URL = 'https://www.facebook.com/'
 
 export interface NavProps {
   path: string
@@ -64,7 +64,7 @@ export default function Nav({ path, deployButton }: NavProps) {
                 target="_blank"
                 rel="noreferrer"
               >
-                Productos Samasat AI
+                Contáctanos
               </Button>
             </span>
             <span className="ml-2 h-full flex items-center cursor-not-allowed text-accents-5">

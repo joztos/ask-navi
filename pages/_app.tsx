@@ -9,9 +9,9 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <Layout
-      title="ask-my-book-chatbot"
-      path="NICs y NIIFs"
-      description="ai-chatbot-that-understands-your-book"
+      title="Navi"
+      path="samasatsa"
+      description="Navi AI tu asistente Financiero y Contable"
       
     >
       <Component {...pageProps} />
